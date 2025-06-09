@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Clima por Día</title>
+  <link rel="stylesheet" href="estilos.css" />
+</head>
+<body>
+  <header role="banner">
+    <h1>Pronóstico del Clima Semanal</h1>
+    <nav role="navigation" aria-label="Menú principal">
+      <ul>
+        <li><a href="paginauniversidad.html" aria-label="Ir a la página de información sobre la Universidad Virtual">Universidad</a></li>
+        <li><a href="paginaclima.html" aria-label="Consultar como estara el clima">Clima</a></li>
+        <li><a href="index.html" aria-label="Regresar a la pagina de inicio">Salir</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main role="main">
+    <h2 tabindex="0">Selecciona un día de la semana</h2>
+    <label for="dia">Día:</label>
+    <select id="dia" onchange="mostrarClima()" aria-label="Día de la semana">
+      <option value="lunes">Lunes</option>
+      <option value="martes">Martes</option>
+      <option value="miercoles">Miércoles</option>
+      <option value="jueves">Jueves</option>
+      <option value="viernes">Viernes</option>
+    </select>
+
+    <section aria-live="polite" id="resultado-clima" role="region" tabindex="0">
+    </section>
+
+    <button onclick="reiniciarClima()" aria-label="Reiniciar al lunes">🔁 Reiniciar</button>
+
+    <h2 tabindex="0">Resumen semanal</h2>
+    <table aria-label="Tabla del clima semanal">
+      <tr>
+        <th>Día</th>
+        <th>Clima</th>
+        <th>Temperatura</th>
+        <th>Humedad</th>
+      </tr>
+      <tr><td>Lunes</td><td>Soleado ☀️</td><td>26°C</td><td>40%</td></tr>
+      <tr><td>Martes</td><td>Nublado ⛅</td><td>24°C</td><td>55%</td></tr>
+      <tr><td>Miércoles</td><td>Lluvia 🌧️</td><td>22°C</td><td>70%</td></tr>
+      <tr><td>Jueves</td><td>Nublado ☁️</td><td>23°C</td><td>65%</td></tr>
+      <tr><td>Viernes</td><td>Tormenta 🌩️</td><td>20°C</td><td>85%</td></tr>
+    </table>
+
+    <h2 tabindex="0">Consulta el clima de tu ciudad</h2>
+    <label for="ciudadTexto">Ciudad:</label>
+    <input type="text" id="ciudadTexto" aria-label="Escribe el nombre de tu ciudad" />
+    <button onclick="simularCiudad()" aria-label="Ver clima para la ciudad">Ver clima 🌍</button>
+
+    <h2 tabindex="0">Imágenes del clima</h2>
+    <figure role="group" aria-labelledby="img1desc">
+      <img src="https://www.sanborns.com/es-us/blog/wp-content/uploads/sites/2/2025/02/clima-en-mexico-por-estaciones-y-temporada.aspx_-480x240.webp" alt="Imagen del clima." width="300" />
+    </figure>
+
+    <p aria-label="Fecha de actualización del clima">Última actualización: 8 de junio de 2025</p>
+  </main>
+
+  <footer role="contentinfo">
+    <p>&copy; 2025 Proyecto de Accesibilidad</p>
+  </footer>
+
+  <script src="paginaclima.js"></script>
+  <script>
+    function toggleDarkMode() {
+      document.body.classList.toggle("dark-mode");
+    }
+  </script>
+</body>
+</html>

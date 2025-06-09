@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<carreras>
+  <carrera>
+    <nombre>Ingeniería en Sistemas</nombre>
+    <duracion>4 años</duracion>
+    <facultad>Facultad de Ingenieria 💻</facultad>
+  </carrera>
+  <carrera>
+    <nombre>Licenciatura en Educación</nombre>
+    <duracion>4 años</duracion>
+    <facultad>Facultad de Educación 📚</facultad>
+  </carrera>
+  <carrera>
+    <nombre>Derecho</nombre>
+    <duracion>5 años</duracion>
+    <facultad>Facultad de Derecho ⚖️</facultad>
+  </carrera>
+  <carrera>
+    <nombre>Contaduria</nombre>
+    <duracion>3 años</duracion>
+    <facultad>Facultad de Economía 📊</facultad>
+  </carrera>
+  <carrera>
+    <nombre>Medicina</nombre>
+    <duracion>6 años</duracion>
+    <facultad>Facultad de Ciencias de la Salud 🩺</facultad>
+  </carrera>
+</carreras>

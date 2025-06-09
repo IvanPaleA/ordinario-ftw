@@ -1,0 +1,120 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: white;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header, footer {
+  width: 100%;
+  background-color: #004466;
+  color: white;
+  padding: 1em;
+  text-align: center;
+}
+
+main {
+  max-width: 800px;
+  padding: 2em;
+  background-color: white;
+  border-radius: 10px;
+  margin: 2em;
+  box-shadow: 0 0 15px gray;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+input, select, button {
+  padding: 0.5em;
+  margin: 0.5em 0;
+  width: 100%;
+  max-width: 400px;
+  display: block;
+  border: 1px solid gray;
+  border-radius: 8px;
+}
+
+button {
+  cursor: pointer;
+  background-color: #004466;
+  color: white;
+}
+
+button:hover {
+  background-color: steelblue;
+}
+
+figure {
+  display: center;
+  text-align: center;
+  background-color: transparent;
+
+}
+
+figure img {
+  border-radius: 10px;
+  max-width: 100%;
+  height: auto;
+  box-shadow: 5px 10px 20px steelblue;
+}
+
+
+body.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+body.dark-mode main {
+  background-color: #1e1e1e;
+}
+
+body.dark-mode input,
+body.dark-mode select,
+body.dark-mode button {
+  background-color: #333;
+  color: white;
+  border-color: #888;
+}
+
+body.dark-mode button:hover {
+  background-color: #555;
+}
+
+
+button:focus-visible,
+a:focus-visible,
+select:focus-visible,
+input:focus-visible {
+  outline: 5px solid gold;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1em;
+}
+
+table th, table td {
+  border: 1px solid black;
+  padding: 0.5em;
+  text-align: center;
+}

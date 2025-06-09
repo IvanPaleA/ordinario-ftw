@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Página de Inicio</title>
+  <link rel="stylesheet" href="estilos.css" />
+</head>
+<body>
+  <header role="banner">
+    <h1>Bienvenido a la Pagina Principal de la Universidad Virtual</h1>
+  </header>
+
+  <main role="main">
+    
+    <section aria-labelledby="formTitulo">
+      <h2  tabindex="0" id="formTitulo">Iniciar sesión</h2>
+      <label for="username">Nombre de usuario:</label>
+      <input type="text" id="username" aria-required="true" required />
+
+      <button onclick="window.location.href='paginauniversidad.html'" aria-label="Ingresar">🔓 Ingresar</button>
+    </section>
+
+    <section>
+      <h2 tabindex="0">¿Qué puedes encontrar en este portal?</h2>
+      <p>Puedes encontrar información sobre la Universidad Virtual, acceder al clima semanal y navegar utilizando tecnología accesible para todos.</p>
+
+      <ul tabindex="0" aria-label="Lista de beneficios del portal">
+        <li>Contenido estructurado</li>
+        <li>Compatible con lectores de pantalla</li>
+        <li>Accesible por teclado</li>
+        <li>Retroalimentación visual</li>
+        <li>Modo oscuro</li>
+      </ul>
+    </section>
+
+
+
+    <section>
+      <h2 tabindex="0">Accesos rápidos</h2>
+      <table aria-label="Tabla de accesos rápidos">
+        <tr>
+          <th>Sección</th>
+          <th>Acción</th>
+        </tr>
+        <tr>
+          <td>Universidad 📘</td>
+          <td><button onclick="window.location.href='paginauniversidad.html'" aria-label="Ir a la página de información sobre la Universidad Virtual">Ver</button></td>
+        </tr>
+        <tr>
+          <td>Clima 🌦️</td>
+          <td><button onclick="window.location.href='paginaclima.html'" aria-label="Consultar como estara el clima">Ver</button></td>
+        </tr>
+      </table>
+    </section>
+
+    <section>
+      <h2 tabindex="0">Utilidades del sitio</h2>
+      <button onclick="toggleDarkMode()" aria-label="Cambiar a modo oscuro">🌓 Cambiar contraste</button>
+      <button onclick="alert('Ayuda en línea próximamente')" aria-label="Ayuda en línea">💬 Ayuda</button>
+      <button onclick="alert('Configuración próximamente')" aria-label="Configuración">⚙️ Configuración</button>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <p>&copy; 2025 Proyecto de Accesibilidad</p>
+  </footer>
+
+  <script>
+    function toggleDarkMode() {
+      document.body.classList.toggle("dark-mode");
+    }
+  </script>
+</body>
+</html>

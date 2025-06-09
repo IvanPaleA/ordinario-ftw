@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Información Universitaria</title>
+  <link rel="stylesheet" href="estilos.css" />
+</head>
+<body>
+  <header role="banner">
+    <h1>Universidad Virtual</h1>
+    <nav role="navigation" aria-label="Menú principal">
+      <ul>
+        <li><a href="paginauniversidad.html" aria-label="Ir a la página de información sobre la Universidad Virtual">Universidad</a></li>
+        <li><a href="paginaclima.html" aria-label="Consultar como estara el clima">Clima</a></li>
+        <li><a href="index.html" aria-label="Regresar a la pagina de inicio">Salir</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main role="main">
+    <h2 tabindex="0">Misión de la Universidad</h2>
+    <p>Buscamos brindar educación superior de calidad en línea, con enfoque en la accesibilidad y la tecnología.</p>
+
+    <h2 tabindex="0">Facultades disponibles</h2>
+    <ul tabindex="0" aria-label="Lista de facultades">
+      <li>Facultad de Ingeniería 💻 </li>
+      <li>Facultad de Educación 📚</li>
+      <li>Facultad de Derecho ⚖️</li>
+      <li>Facultad de Economía 📊</li>
+      <li>Facultad de Ciencias de la Salud 🩺</li>
+    </ul>
+
+
+    <h2 tabindex="0">Carreras disponibles</h2>
+    <table aria-label="Tabla de carreras" id="tabla-carreras">
+    </table>
+
+    <h2 tabindex="0">Recursos</h2>
+    <button onclick="alert('Accediendo a becas')" aria-label="Información sobre becas">🎁 Ver becas</button>
+    <button onclick="alert('Contacto con asesores')" aria-label="Chatear con asesores">💬 Asesoría en línea</button>
+    <button onclick="toggleDarkMode()" aria-label="Cambiar contraste del sitio">🌓 Cambiar contraste</button>
+
+    <h2 tabindex="0">Ubicación</h2>
+    <p>📍 Campus Virtual - Sitio Web: <a href="#" aria-label="Ir a la página de información sobre la Universidad Virtual">www.universidadvirtual.edu</a></p>
+  </main>
+
+  <footer role="contentinfo">
+    <p>&copy; 2025 Proyecto de Accesibilidad</p>
+  </footer>
+
+  <script src="paginauniversidad.js"></script>
+  <script>
+    function toggleDarkMode() {
+      document.body.classList.toggle("dark-mode");
+    }
+  </script>
+</body>
+</html>
